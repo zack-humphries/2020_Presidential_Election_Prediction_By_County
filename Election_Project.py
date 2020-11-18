@@ -357,7 +357,7 @@ state1rf = pd.DataFrame(data=arraystaterf, columns=["state"])
 arrayrf5 = []
 i = 0
 
-while i < len(pred):
+while i < len(predrf):
     if (int(predrf._get_value(i, "prediction")) != int(actualrf._get_value(i, "leader_party_binary"))):
         arrayrf5.append(0)
     else:
@@ -489,7 +489,7 @@ state1ann = pd.DataFrame(data=arraystateann, columns=["state"])
 arrayann5 = []
 i = 0
 
-while i < len(pred):
+while i < len(predann):
     if (int(predann._get_value(i, "prediction")) != int(actualann._get_value(i, "leader_party_binary"))):
         arrayann5.append(0)
     else:
